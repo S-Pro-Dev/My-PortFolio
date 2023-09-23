@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <script
+      src="https://kit.fontawesome.com/9d38bf67e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav" id="nav">
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <section>
+          <p class="project" id="project">Project's</p>
+          <p class="Contact" id="contact">Contact Me</p>
+        </section>
+      </div>
+      <div class="card-blur" id="firstPage">
+        <div class="contectme"></div>
+
+        <!-- ***************** -->
+        <!-- --FIRST SECTION-- -->
+        <!-- ***************** -->
+        
+        <section class="firstSection hide" id="firstSection">
+          <div class="leftSection">
+            <h1>Hi,</h1>
+            My name is <span class="purple">Subham</span>
+            <div>and I am a passionate</div>
+            <!-- Element to contain animated typing -->
+            <span id="element"></span>
+            <div class="botton">
+              <button class="btn" id="downloadBtn">Download Resume</button>
+              <p id="message">Resume not available</p>
+            </div>
+          </div>
+          <div class="rightSection">
+            <img src="profile-pic/boy.png" alt="img" />
+          </div>
+        </section>
+       
+        <hr/>
+
+        <!-- ***************** -->
+        <!-- --SECOND SECTION-- -->
+        <!-- ***************** -->
+        <section class="secondSection hide" id="secondSection">
+          <!-- <h3>Intro</h3> -->
+          <p>
+            <span class="hi">Hi,</span> I'm Subham Narayan Deb, and I reside in
+            Jamshedpur, Jharkhand. This is my portfolio website where I showcase
+            my web development <span class="p">projects</span>. Currently, I am
+            actively involved in web development, and I have gained expertise in
+            several programming languages.
+            <br />
+            If you need any assistance with web development or have any
+            web-related projects in mind, feel free to get in touch with me. I
+            would be more than happy to help.
+            <br />
+            Apart from web development, I am also passionate about photography.
+            Additionally, I thoroughly enjoy photo and video editing, and I
+            consider myself skilled in this area as well.
+            <br />
+            If you require any help with photography, photo editing, or video
+            editing, you can confidently rely on me. I'd be delighted to assist
+            you.
+            <br />
+            Thank you for providing this opportunity. If you are interested in
+            collaborating with me, please don't hesitate to reach out.
+          </p>
+
+          <!-- *****************  -->
+          <!-- *||PROGRESS BAR||*  -->
+          <!-- *****************  -->
+
+          <div class="BAR">
+            <h3 class="headinga">Some of my knowledge</h3>
+            <div class="progress-body">
+              <div class="progress-bar-container">
+                <div class="progress-bar html">
+                  <progress id="html" min="0" max="100" value="60"></progress>
+                </div>
+                <h2 class="pro-text">
+                  <label for="html">HTML</label>
+                </h2>
+              </div>
+
+              <div class="progress-bar-container">
+                <div class="progress-bar css">
+                  <progress id="css" min="0" max="100" value="50"></progress>
+                </div>
+                <h2 class="pro-text">
+                  <label for="css">CSS</label>
+                </h2>
+              </div>
+
+              <div class="progress-bar-container">
+                <div class="progress-bar js">
+                  <progress id="js" min="0" max="100" value="30"></progress>
+                </div>
+                <h2 class="pro-text">
+                  <label for="js">JavaScript</label>
+                </h2>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar react">
+                  <progress id="React" min="0" max="100" value="5"></progress>
+                </div>
+                <h2 class="pro-text">
+                  <label for="React">React Js</label>
+                </h2>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar node">
+                  <progress id="Node" min="0" max="100" value="0"></progress>
+                </div>
+                <h2 class="pro-text">
+                  <label for="node">Node Js</label>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ***************** -->
+        <!-- ==PHOTO'S SECTION== -->
+        <!-- --THIRD SECTION-- -->
+        <!-- ***************** -->
+
+        <hr class="hr hide" />
+        <h2 class="photosheading hide">My Photos Collection</h2>
+        <section class="thirdSection hide" id="thirdSection" >
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 175">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="mela">
+                  <div class="img-bg"></div>
+                  <img src="img/mela.webp" alt="mela" />
+                </figure>
+
+                <ul>
+                  <li>"Band Of Colors✨"</li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <figure class="mela blur">
+                  <div class="img-bg"></div>
+                  <img src="img/mela.webp" alt="img" />
+                </figure>
+
+                <button class="visit-button photos-one" data-instagram-link="https://www.instagram.com/p/CiHfIcXJM4b/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==" >Visit</button>
+
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /flip-card-container -->
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 180">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="nature">
+                  <div class="img-bg"></div>
+                  <img src="img/nature1.webp" alt="Img" />
+                </figure>
+                <ul>
+                  <li>
+                    "Sailing Through the Celestial River Aboard the Majestic
+                    Moon Ship🌙✨"
+                  </li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <figure class="nature blur">
+                  <div class="img-bg"></div>
+                  <img src="img/nature1.webp" alt="img" />
+                </figure>
+
+                <button class="visit-button" id="photo-two" data-instagram-link="https://www.instagram.com/p/CjxQYHapBWQ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Visit</button>
+
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /flip-card-container -->
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 185">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="moon">
+                  <div class="img-bg"></div>
+                  <img src="img/moon.webp" alt="img" />
+                </figure>
+
+                <ul>
+                  <li>
+                    "The moon is the perfect reminder that even in the darkness,
+                    there's always a light shining."
+                  </li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <!-- only if the image is necessary -->
+                <figure class="moon blur">
+                  <div class="img-bg"></div>
+                  <img src="img/moon.webp" alt="img" />
+                </figure>
+
+                <button class="visit-button" id="photo-three" data-instagram-link="https://www.instagram.com/p/CqLXXxHJOwQ/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Visit</button>
+
+                <!-- can add svg here and remove these eight spans -->
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 190">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="road">
+                  <div class="img-bg"></div>
+                  <img src="img/road.webp" alt="img" />
+                </figure>
+
+                <ul>
+                  <li>
+                    "Do not fear. The rain is only here to help you grow🌱"
+                  </li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <!-- only if the image is necessary -->
+                <figure class="road blur">
+                  <div class="img-bg"></div>
+                  <img src="img/road.webp" alt="img" />
+                </figure>
+
+                <button class="visit-button"id="photo-four" data-instagram-link="https://www.instagram.com/p/CeD-4bVsJRh/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Visit</button>
+
+                <!-- can add svg here and remove these eight spans -->
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 195">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="sunrise">
+                  <div class="img-bg"></div>
+                  <img src="img/sunrise.webp" alt="img" />
+                </figure>
+
+                <ul>
+                  <li>
+                    "Embracing the dawn of a new day, as the sun paints the sky
+                    with hues of hopes and possibility.🌅✨"
+                  </li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <!-- only if the image is necessary -->
+                <figure class="sunrise blur">
+                  <div class="img-bg"></div>
+                  <img src="img/sunrise.webp" alt="img" />
+                </figure>
+
+                <button class="visit-button" id="photo-five" data-instagram-link="https://www.instagram.com/p/Cj7trTzJUCW/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Visit</button>
+
+                <!-- can add svg here and remove these eight spans -->
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 205">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="flower">
+                  <div class="img-bg"></div>
+                  <img src="img/flower.jpg" alt="img" />
+                </figure>
+
+                <ul>
+                  <li>
+                    "Nurtured by nature's hand, a purple bloom whispers elegance
+                    and grace in every petal.💜🌸"
+                  </li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <!-- only if the image is necessary -->
+                <figure class="flower blur">
+                  <div class="img-bg"></div>
+                  <img src="img/flower.jpg" alt="img" />
+                </figure>
+
+                <button class="visit-button" id="photo-six" data-instagram-link="https://www.instagram.com/p/BrcaGe_BblD/?utm_source=ig_web_copy_link">Visit</button>
+
+                <!-- can add svg here and remove these eight spans -->
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /flip-card-container -->
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 210">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="coin">
+                  <div class="img-bg"></div>
+                  <img src="img/indian coin.jpg" alt="img" />
+                </figure>
+
+                <ul>
+                  <li>
+                    "Before money, there's nothing in front of a person. Because
+                    true values and the best aspects of humanity cannot be
+                    measured by currency.💴💲"
+                  </li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <!-- only if the image is necessary -->
+                <figure class="coin blur">
+                  <div class="img-bg"></div>
+                  <img src="img/indian coin.jpg" alt="img" />
+                </figure>
+
+                <button class="visit-button" id="photo-seven" data-instagram-link="https://www.instagram.com/p/COxZiKupmrb/?utm_source=ig_web_copy_link">Visit</button>
+
+                <!-- can add svg here and remove these eight spans -->
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /flip-card-container -->
+
+          <!-- flip-card-container -->
+          <div class="flip-card-container" style="--hue: 210">
+            <div class="flip-card">
+              <div class="card-front">
+                <figure class="">
+                  <div class="img-bg"></div>
+                  <img src="img/mall.webp" alt="img" />
+                </figure>
+
+                <ul>
+                  <li>"Sky above, possibilities within.👍"</li>
+                </ul>
+                <p class="insta-link">
+                  <span>_photoz.x._</span>
+                </p>
+              </div>
+
+              <div class="card-back">
+                <!-- only if the image is necessary -->
+                <figure class="blur">
+                  <div class="img-bg"></div>
+                  <img src="img/mall.webp" alt="img" />
+                </figure>
+
+                <button class="visit-button" id="photo-eight" data-instagram-link="https://www.instagram.com/p/Crk_Om2pggT/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==">Visit</button>
+
+                <!-- can add svg here and remove these eight spans -->
+                <div class="design-container">
+                  <span class="design design--1"></span>
+                  <span class="design design--2"></span>
+                  <span class="design design--3"></span>
+                  <span class="design design--4"></span>
+                  <span class="design design--5"></span>
+                  <span class="design design--6"></span>
+                  <span class="design design--7"></span>
+                  <span class="design design--8"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /flip-card-container -->
+        </section>
+        <p class="insta hide">
+          If you want to see more photos or get photos edited, please send a
+          message on Instagram.
+          <a href="https://www.instagram.com/_photoz.x._/" target="_blank">
+            <i class="fa-brands fa-instagram fa-2xl"></i> _photoz.x._
+          </a>
+        </p>
+      </div>
+
+      <!-- ====== My-Project[Section's] ====== -->
+
+      <div class="myallproject" id="myprojects">
+        <header class="project-header">
+        <h1>My Projects</h1>
+        <div id="back" class="back-button"><i class="fa-solid fa-arrow-left fa-fade" style="color: #ffffff;"></i></div>
+        </header>
+        <main id="projects-container"></main>
+      </div>
+
+      <div class="footer hide">
+        <span class="text1">Developer By ::</span
+        ><span class="text2"> Subham Narayan Deb</span>
+      </div>
+    <div>
+
+    <!-- typed.js CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      let typed = new Typed("#element", {
+        strings: ["Web Developer", "UI & UX Designer", "App Development", "Photographer", "Photo And Video Editor"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
