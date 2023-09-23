@@ -124,13 +124,13 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// document.addEventListener("keydown", function (e) {
-//   if (e.key === "F12") {
-//     e.preventDefault();
-//     showMessage("Warning: Unauthorized access is not allowed!");
-//     return false;
-//   }
-// });
+document.addEventListener("keydown", function (e) {
+  if (e.key === "F12") {
+    e.preventDefault();
+    showMessage("Warning: Unauthorized access is not allowed!");
+    return false;
+  }
+});
 
 function showMessage(message) {
   const messageDiv = document.createElement("div");
