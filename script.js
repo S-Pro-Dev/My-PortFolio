@@ -64,7 +64,7 @@ function show() {
       </div>
     </div>
   </div>
-`
+`;
 
   showButton.addEventListener("mouseenter", () => {
     if (!isContentVisible) {
@@ -87,8 +87,6 @@ function show() {
 
 window.onload = show;
 
-
-
 /****************************************/
 /******** Photos Instagram Link *********/
 /***************************************/
@@ -96,7 +94,7 @@ window.onload = show;
 document.addEventListener("DOMContentLoaded", () => {
   const photosLinks = document.querySelectorAll(".visit-button");
 
-  photosLinks.forEach(link => {
+  photosLinks.forEach((link) => {
     link.addEventListener("click", () => {
       const url = link.getAttribute("data-instagram-link");
       window.open(url, "_blank");
@@ -106,31 +104,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 /*\\\\\\\ *********** ///////*/
 /*\\\\\\\ Disable key ///////*/
 /*\\\\\\\ *********** ///////*/
 
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-  showMessage("Warning: Unauthorized access is not allowed!");
-});
+// document.addEventListener("contextmenu", function (e) {
+//   e.preventDefault();
+//   showMessage("Warning: Unauthorized access is not allowed!");
+// });
 
-document.addEventListener("keydown", function (e) {
-  if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
-    e.preventDefault();
-    showMessage("Warning: Unauthorized access is not allowed!");
-    return false;
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.ctrlKey && (e.key === "u" || e.key === "U")) {
+//     e.preventDefault();
+//     showMessage("Warning: Unauthorized access is not allowed!");
+//     return false;
+//   }
+// });
 
-document.addEventListener("keydown", function (e) {
-  if (e.key === "F12") {
-    e.preventDefault();
-    showMessage("Warning: Unauthorized access is not allowed!");
-    return false;
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.key === "F12") {
+//     e.preventDefault();
+//     showMessage("Warning: Unauthorized access is not allowed!");
+//     return false;
+//   }
+// });
 
 function showMessage(message) {
   const messageDiv = document.createElement("div");
@@ -144,12 +141,9 @@ function showMessage(message) {
   }, 2000);
 }
 
-
-
 /* =========================== */
 /* ===== Download Resume ===== */
 /* =========================== */
-
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const downloadBtn = document.getElementById("downloadBtn");
@@ -207,7 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const fileUrl = "CV.pdf";
 
   downloadBtn.addEventListener("click", function () {
-
     const isUpToDate = false;
 
     if (!isUpToDate) {
@@ -232,21 +225,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function downloadFile(url) {
   fetch(url, {
-    method: "HEAD"
+    method: "HEAD",
   })
-    .then(response => {
+    .then((response) => {
       const contentLength = response.headers.get("Content-Length");
       const contentRange = `bytes=0-${contentLength}`;
 
       return fetch(url, {
         method: "GET",
         headers: {
-          "Range": contentRange
-        }
+          Range: contentRange,
+        },
       });
     })
-    .then(response => response.blob())
-    .then(blob => {
+    .then((response) => response.blob())
+    .then((blob) => {
       const objectURL = URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = objectURL;
@@ -254,17 +247,14 @@ function downloadFile(url) {
       link.click();
       URL.revokeObjectURL(objectURL);
     })
-    .catch(error => {
+    .catch((error) => {
       console.error("Error downloading the file:", error);
     });
 }
 
-
-
 /* ====== My Project [Section's] ===== */
 
-
-// 1st Method 
+// 1st Method
 // document.addEventListener("DOMContentLoaded", async function () {
 //   const projectsContainer = document.getElementById("projects-container");
 //   const username = "s-pro-dev";
@@ -305,9 +295,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   // Define a mapping of GitHub language colors
   const languageColors = {
-    JavaScript: '#f1e05a',
-    HTML: '#e34c26',
-    CSS: '#1f62dee3',
+    JavaScript: "#f1e05a",
+    HTML: "#e34c26",
+    CSS: "#1f62dee3",
     // Add more languages and their colors as needed
   };
 
@@ -330,7 +320,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         <div class="project-details">
         <p>${repository.description || "No description available"}</p>
         <span class="code-usage"></span>
-        <a class="project-button" href="${repository.homepage || repository.html_url}" target="_blank">
+        <a class="project-button" href="${
+          repository.homepage || repository.html_url
+        }" target="_blank">
         <i class="fa-solid fa-eye"></i>
         </a>
         </div>
@@ -344,14 +336,19 @@ document.addEventListener("DOMContentLoaded", async function () {
         const languagesResponse = await fetch(languagesUrl);
 
         if (!languagesResponse.ok) {
-          console.error(`Failed to fetch languages for ${repository.name}. Status: ${languagesResponse.status}`);
+          console.error(
+            `Failed to fetch languages for ${repository.name}. Status: ${languagesResponse.status}`
+          );
           continue;
         }
 
         const languagesData = await languagesResponse.json();
 
         // Calculate and display the percentages of code usage for each language
-        const totalSize = Object.values(languagesData).reduce((total, size) => total + size, 0);
+        const totalSize = Object.values(languagesData).reduce(
+          (total, size) => total + size,
+          0
+        );
         const codeUsageElement = card.querySelector(".code-usage"); // Select the .code-usage element within this card
 
         Object.entries(languagesData).forEach(([language, size]) => {
@@ -390,7 +387,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   fetchProjects();
 });
-
 
 /* ====== My Project [HIDE AND UN-HIDE] ===== */
 document.addEventListener("DOMContentLoaded", function () {

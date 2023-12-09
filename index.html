@@ -13,11 +13,14 @@
     />
     <link rel="shortcut icon" href="img/logoo.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    
     <script
       src="https://kit.fontawesome.com/9d38bf67e1.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <style id="dynamicStyles"></style>
+    
   </head>
   <body>
     <div class="main-container">
@@ -88,7 +91,7 @@
 
           <div class="BAR">
             <h3 class="headinga">Some of my knowledge</h3>
-            <div class="progress-body">
+            <div class="progress-body" id="progressBody">
               <div class="progress-bar-container">
                 <div class="progress-bar html">
                   <progress id="html" min="0" max="100" value="60"></progress>
@@ -513,16 +516,17 @@
         ><span class="text2"> Subham Narayan Deb</span>
       </div>
     <div>
-
+    <script src="script.js"></script>
     <!-- typed.js CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <!-- Setup and start animation! -->
     <script>
       let typed = new Typed("#element", {
-        strings: ["Web Developer", "UI & UX Designer", "App Development", "Photographer", "Photo And Video Editor"],
+        strings: ["Web Developer", "UI & UX Designer", "Photographer", "Photo And Video Editor"],
         typeSpeed: 50,
       });
     </script>
+   
   </body>
 </html>
